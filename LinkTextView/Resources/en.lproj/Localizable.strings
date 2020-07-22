@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  LinkTextView
+
+  Created by Adar Tzeiri on 21/07/2020.
+  Copyright © 2020 Adar Tzeiri. All rights reserved.
+*/
+
+"Description"     = "Just click %@ to login";
+"ReadMore"        = "here";
+
+"DescriptionRTL"  = "לחץ %@ כדי להתחבר";
+"ReadMoreRTL"     = "כאן";

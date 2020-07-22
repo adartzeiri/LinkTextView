@@ -8,13 +8,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+//Constant Demo
+let text = "DescriptionRTL"
+let link = "ReadMoreRTL"
 
+class ViewController: UIViewController {
+    @IBOutlet weak var linkTextView: LinkTextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        linkTextView.configureWith(text: localized(key: text), links: (title: localized(key: link), link: UrlConstants.google.rawValue), linkColor: UIColor.blue, supportRTL: true)
+        
+        //Optional
+        linkTextView.linkTextViewDelegate = self
     }
+}
 
-
+extension ViewController : LinkTextViewDelegate {
+    func linkPressedWith(_ linkURL: URL) {
+        print(linkURL)
+    }
 }
 

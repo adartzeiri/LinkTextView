@@ -15,6 +15,11 @@
 		BA444E9824C6F3E200CCAE33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA444E9624C6F3E200CCAE33 /* LaunchScreen.storyboard */; };
 		BA444EA324C6F3E200CCAE33 /* LinkTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA444EA224C6F3E200CCAE33 /* LinkTextViewTests.swift */; };
 		BA444EAE24C6F3E200CCAE33 /* LinkTextViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA444EAD24C6F3E200CCAE33 /* LinkTextViewUITests.swift */; };
+		BA444EBC24C6F41A00CCAE33 /* LinkTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA444EBB24C6F41A00CCAE33 /* LinkTextView.swift */; };
+		BA444EBF24C6F4A700CCAE33 /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA444EBE24C6F4A700CCAE33 /* ExtensionUIView.swift */; };
+		BA444EC324C6F5E000CCAE33 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA444EC224C6F5E000CCAE33 /* URLConstants.swift */; };
+		BA444EC724C6F68E00CCAE33 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA444EC924C6F68E00CCAE33 /* Localizable.strings */; };
+		BA444ECB24C6F6DC00CCAE33 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA444ECA24C6F6DC00CCAE33 /* Defines.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		BA444EA924C6F3E200CCAE33 /* LinkTextViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkTextViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA444EAD24C6F3E200CCAE33 /* LinkTextViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkTextViewUITests.swift; sourceTree = "<group>"; };
 		BA444EAF24C6F3E200CCAE33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA444EBB24C6F41A00CCAE33 /* LinkTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkTextView.swift; sourceTree = "<group>"; };
+		BA444EBE24C6F4A700CCAE33 /* ExtensionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIView.swift; sourceTree = "<group>"; };
+		BA444EC224C6F5E000CCAE33 /* URLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
+		BA444EC824C6F68E00CCAE33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BA444ECA24C6F6DC00CCAE33 /* Defines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,13 @@
 		BA444E8A24C6F3DE00CCAE33 /* LinkTextView */ = {
 			isa = PBXGroup;
 			children = (
-				BA444E8B24C6F3DE00CCAE33 /* AppDelegate.swift */,
-				BA444E8D24C6F3DE00CCAE33 /* SceneDelegate.swift */,
 				BA444E8F24C6F3DE00CCAE33 /* ViewController.swift */,
+				BA444EBB24C6F41A00CCAE33 /* LinkTextView.swift */,
 				BA444E9124C6F3DE00CCAE33 /* Main.storyboard */,
-				BA444E9424C6F3E200CCAE33 /* Assets.xcassets */,
-				BA444E9624C6F3E200CCAE33 /* LaunchScreen.storyboard */,
-				BA444E9924C6F3E200CCAE33 /* Info.plist */,
+				BA444EC424C6F63600CCAE33 /* Resources */,
+				BA444EC124C6F5BB00CCAE33 /* ApplicationManagment */,
+				BA444EC024C6F4BE00CCAE33 /* Extensions */,
+				BA444EBD24C6F43100CCAE33 /* SupportingFiles */,
 			);
 			path = LinkTextView;
 			sourceTree = "<group>";
@@ -126,6 +136,43 @@
 				BA444EAF24C6F3E200CCAE33 /* Info.plist */,
 			);
 			path = LinkTextViewUITests;
+			sourceTree = "<group>";
+		};
+		BA444EBD24C6F43100CCAE33 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				BA444E8B24C6F3DE00CCAE33 /* AppDelegate.swift */,
+				BA444E8D24C6F3DE00CCAE33 /* SceneDelegate.swift */,
+				BA444E9424C6F3E200CCAE33 /* Assets.xcassets */,
+				BA444E9624C6F3E200CCAE33 /* LaunchScreen.storyboard */,
+				BA444E9924C6F3E200CCAE33 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		BA444EC024C6F4BE00CCAE33 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA444EBE24C6F4A700CCAE33 /* ExtensionUIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BA444EC124C6F5BB00CCAE33 /* ApplicationManagment */ = {
+			isa = PBXGroup;
+			children = (
+				BA444EC224C6F5E000CCAE33 /* URLConstants.swift */,
+				BA444ECA24C6F6DC00CCAE33 /* Defines.swift */,
+			);
+			path = ApplicationManagment;
+			sourceTree = "<group>";
+		};
+		BA444EC424C6F63600CCAE33 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA444EC924C6F68E00CCAE33 /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA444E9824C6F3E200CCAE33 /* LaunchScreen.storyboard in Resources */,
+				BA444EC724C6F68E00CCAE33 /* Localizable.strings in Resources */,
 				BA444E9524C6F3E200CCAE33 /* Assets.xcassets in Resources */,
 				BA444E9324C6F3DE00CCAE33 /* Main.storyboard in Resources */,
 			);
@@ -259,9 +307,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA444ECB24C6F6DC00CCAE33 /* Defines.swift in Sources */,
 				BA444E9024C6F3DE00CCAE33 /* ViewController.swift in Sources */,
 				BA444E8C24C6F3DE00CCAE33 /* AppDelegate.swift in Sources */,
 				BA444E8E24C6F3DE00CCAE33 /* SceneDelegate.swift in Sources */,
+				BA444EC324C6F5E000CCAE33 /* URLConstants.swift in Sources */,
+				BA444EBC24C6F41A00CCAE33 /* LinkTextView.swift in Sources */,
+				BA444EBF24C6F4A700CCAE33 /* ExtensionUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +363,14 @@
 				BA444E9724C6F3E200CCAE33 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BA444EC924C6F68E00CCAE33 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA444EC824C6F68E00CCAE33 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -436,7 +496,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PW8PSC24QK;
-				INFOPLIST_FILE = LinkTextView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LinkTextView/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +514,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PW8PSC24QK;
-				INFOPLIST_FILE = LinkTextView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LinkTextView/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
